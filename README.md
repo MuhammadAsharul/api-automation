@@ -25,7 +25,7 @@ bootcamp-qa-automation/
 
 📖 Instalasi dan Setup
 1️⃣ Clone Repositori
-git clone https://github.com/yourusername/bootcamp-qa-automation.git
+git clone https://github.com/MuhammadAsharul/qaautomation.git
 cd bootcamp-qa-automation
 
 2️⃣ Install Dependencies
