@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="0.886" tests="16" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Code\apiautomation\target\test-classes;D:\Code\apiautomation\target\classes;C:\Users\masha\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\masha\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\masha\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\masha\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\masha\AppData\Local\Temp\surefire3000841741481170794\surefirebooter-20250212111954176_3.jar C:\Users\masha\AppData\Local\Temp\surefire3000841741481170794 2025-02-12T11-19-52_712-jvmRun1 surefire-20250212111954176_1tmp surefire_0-20250212111954176_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Code\apiautomation\target\test-classes;D:\Code\apiautomation\target\classes;C:\Users\masha\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\masha\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\masha\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\masha\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\masha"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Code\apiautomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\masha\AppData\Local\Temp\surefire3000841741481170794\surefirebooter-20250212111954176_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
+    <property name="user.name" value="masha"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\masha\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\masha\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="D:\Code\apiautomation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\Neovim\binC:\Program Files\Java\jdk-21\bin;C:\Program Files\Maven\apache-maven-3.8.8\bin;C:\Users\masha\AppData\Local\pnpm;C:\Users\masha\.config\herd-lite\bin;C:\Users\masha\scoop\shims;C:\Users\masha\AppData\Local\Microsoft\WindowsApps;C:\Users\masha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\masha\AppData\Roaming\npm;;C:\Program Files\JetBrains\WebStorm 2024.3.2.1\bin;;C:\Program Files\JetBrains\PhpStorm 2024.3.2.1\bin;;C:\Program Files\JetBrains\Aqua 2024.3.2\bin;;c:\Users\masha\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.5+9-LTS-239"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="checkoutBrang" classname="testng.TestNG" time="0.002">
+    <system-out><![CDATA[Before Suite
+Set up Class
+set up Class
+Before Method
+Before Method
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="scenarioTest1" classname="testng.TestNG" time="0.002">
+    <system-out><![CDATA[Test 1
+scenario 1
+Test 1
+1092572064
+]]></system-out>
+  </testcase>
+  <testcase name="scenarioTest2" classname="testng.TestNG" time="0.001">
+    <system-out><![CDATA[Test 4
+]]></system-out>
+  </testcase>
+  <testcase name="scenarioTest3" classname="testng.TestNG" time="0.001"/>
+  <testcase name="checkoutBarang" classname="testng.ParallelTestNG" time="0.007"/>
+  <testcase name="scenarioTest1" classname="testng.ParallelTestNG" time="0.003"/>
+  <testcase name="scenarioTest2" classname="testng.ParallelTestNG" time="0.001"/>
+  <testcase name="scenarioTest3" classname="testng.ParallelTestNG" time="0.001"/>
+  <testcase name="dataTestScenario[Rudy, 110](1)" classname="testng.ParallelTestNG2" time="0.0">
+    <system-out><![CDATA[After Method
+After Method
+Before Method
+Before Method
+Nama : Rudy Umur : 110
+]]></system-out>
+  </testcase>
+  <testcase name="dataTestScenario[Sari, 20](2)" classname="testng.ParallelTestNG2" time="0.002">
+    <system-out><![CDATA[Nama : Sari Umur : 20
+]]></system-out>
+  </testcase>
+  <testcase name="dataTestScenario[Joko, 25](3)" classname="testng.ParallelTestNG2" time="0.002">
+    <system-out><![CDATA[Nama : Joko Umur : 25
+]]></system-out>
+  </testcase>
+  <testcase name="scenarioTest1" classname="testng.ParallelTestNG2" time="0.003"/>
+  <testcase name="scenarioTest2" classname="testng.ParallelTestNG2" time="0.002">
+    <system-out><![CDATA[After Method
+After Method
+scenario 2
+1092572064
+]]></system-out>
+  </testcase>
+  <testcase name="scenarioTest3" classname="testng.ParallelTestNG2" time="0.0">
+    <system-out><![CDATA[Before Method
+Before Method
+scenario 3
+1092572064
+Test 2
+]]></system-out>
+  </testcase>
+  <testcase name="scenarioTest4" classname="testng.ParallelTestNG2" time="0.001">
+    <system-out><![CDATA[After Method
+After Method
+scenario 4
+1092572064
+]]></system-out>
+  </testcase>
+  <testcase name="scenarioTest5" classname="testng.ParallelTestNG2" time="0.0">
+    <system-out><![CDATA[Before Method
+Before Method
+scenario 5
+1092572064
+Test 3
+Test 3
+]]></system-out>
+  </testcase>
+</testsuite>

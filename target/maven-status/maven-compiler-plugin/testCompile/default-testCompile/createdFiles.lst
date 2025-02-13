@@ -1,0 +1,8 @@
+testng\ParallelTestNG.class
+testng\TestNGAnnotation.class
+example\ExecutionListener.class
+testng\TestNG.class
+testng\ParallelTestNG2.class
+testng\SampleTest.class
+testng\RetryTest.class
+example\StaticProvider.class
