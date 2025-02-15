@@ -1,17 +1,53 @@
 package restassured;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class RestAssuredImpl {
     public static void main(String[] args) {
+        // auth();
         // getAllProducts();
-        // getProductById();
+        getProductById();
         // searchProduct();
         // createProduct();
-        updateProduct();
+        // updateProduct();
         // deleteProduct();
+    }
+
+    public static String auth(){
+        // POST /login
+        // {
+        //     "username": "admin",
+        //     "password": "admin"
+        // }
+
+        String json = "{\n" +
+              "    \"username\": \"emilys\",\n" +
+              "    \"password\": \"emilyspass\",\n" +
+              "    \"expiresInMins\": 30\n" + 
+              "}";
+
+        RestAssured.baseURI = "https://dummyjson.com";
+        RequestSpecification requestSpecification = RestAssured.given();
+        Response response = requestSpecification
+                                .log()
+                                .all()
+                                .body(json)
+                                .contentType("application/json")
+                                .pathParam("path", "auth")
+                                .pathParam("section", "login")
+                            .when()
+                                .post("{path}/{section}");
+        System.out.println("Login: " + response.asPrettyString());
+
+        JsonPath jsonPath = response.jsonPath();
+        System.out.println("Token: " + jsonPath.get("accessToken"));
+        String token = jsonPath.get("accessToken");
+        System.out.println("Token: " + token);
+        return token;
+
     }
 
     public static void getAllProducts() {
@@ -39,9 +75,14 @@ public class RestAssuredImpl {
     public static void getProductById() {
         // GET /products/{id}
         // "https://dummyjson.com/products/1"
+        String token;
+
+        token = auth();
+
         RestAssured.baseURI = "https://dummyjson.com";
         RequestSpecification requestSpecification = RestAssured.given();
         Response response3 = requestSpecification
+                                .header("Authorization", "Bearer " + token)
                                 .log()
                                 .all()    
                                 .pathParam("path", "products")
