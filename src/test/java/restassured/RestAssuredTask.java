@@ -136,7 +136,7 @@ public class RestAssuredTask {
                                 .log()
                                 .all()
                                 .pathParam("path", "objects")
-                                .pathParam("idObject", "ff808181932badb601950a1544af3446")
+                                .pathParam("idObject", "ff808181932badb601950a1def5e344a")
                                 .body(json)
                                 .contentType("application/json")
                             .when()
@@ -160,7 +160,7 @@ public class RestAssuredTask {
                                 .log()
                                 .all()
                                 .pathParam("path", "objects")
-                                .pathParam("idObject", "ff808181932badb601950a1544af3446")
+                                .pathParam("idObject", "ff808181932badb601950a1def5e344a")
                                 .body(json)
                                 .contentType("application/json")
                             .when()
@@ -176,7 +176,7 @@ public class RestAssuredTask {
                                 .log()
                                 .all()
                                 .pathParam("path", "objects")
-                                .pathParam("idObject", "ff808181932badb601950a1544af3446") // ketika kita ganti 195 not found karena idObject tidak disimpan di server
+                                .pathParam("idObject", "ff808181932badb601950a1def5e344a") // ketika kita ganti 195 not found karena idObject tidak disimpan di server
                             .when()
                                 .delete("{path}/{idObject}");
         System.out.println("Delete Object adalah: " + response.asPrettyString());

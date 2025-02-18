@@ -60,7 +60,7 @@ public class RestAssuredImpl {
 
         RestAssured.baseURI = "https://dummyjson.com"; // type String
         RequestSpecification requestSpecification = RestAssured.given();
-        Response response =requestSpecification.log().all().get("products"); // type Response
+        // Response response =requestSpecification.log().all().get("products"); // type Response
         Response response2 = RestAssured
                             .given()
                                 .log()

@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.*;
 
 public class ValidationResponse {
     public static void main(String[] args) {
-
+        getProductById();
     }
 
     public static void getProductById() {
@@ -25,9 +25,11 @@ public class ValidationResponse {
                                 .pathParam("idProduct", 1)
                             .when()
                                 .get("{path}/{idProduct}");
+
         ValidatableResponse validationResponse = response
                                                 .then()
                                                 .body("id", equalTo(1));
+                                                
         if(validationResponse.equals(true)){
             System.out.println("Validasi : " + response.asPrettyString());
         } else {
