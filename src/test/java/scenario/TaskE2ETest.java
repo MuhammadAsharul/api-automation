@@ -102,5 +102,28 @@ public class TaskE2ETest {
         System.out.println("Response API" + response3.asPrettyString());
 
 
+        // Delete product
+        Response responseDelete = given()
+                            .log()
+                            .all()
+                            .pathParam("path", "objects")
+                            .pathParam("idObject", idObject)
+                        .when()
+                            .delete("{path}/{idObject}");
+        System.out.println("Response API" + responseDelete.asPrettyString());
+
+        
+        // Verify updated product
+        Response response4 = given()
+                            .log()
+                            .all()
+                            .pathParam("path", "objects")
+                            .pathParam("idObject", idObject)
+                        .when()
+                            .get("{path}/{idObject}");
+        System.out.println("Response API" + response4.asPrettyString());
+
+
+
     }
 }
