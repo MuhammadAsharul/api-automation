@@ -3,47 +3,47 @@ package com.apiautomation.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ResponseObject {
-    // {
-    //     "id": "7",
-    //     "name": "Apple MacBook Pro 16",
-    //     "data": {
-    //        "year": 2019,
-    //        "price": 1849.99,
-    //        "CPU model": "Intel Core i9",
-    //        "Hard disk size": "1 TB"
-    //     },
-    //     "createdAt": "2022-11-21T20:06:23.986Z"
-    //  }
+    /* {
+        "id": "7",
+        "name": "Apple MacBook Pro 16",
+        "data": {
+           "year": 2019,
+           "price": 1849.99,
+           "CPU model": "Intel Core i9",
+           "Hard disk size": "1 TB"
+        },
+        "createdAt": "2022-11-21T20:06:23.986Z"
+     }
 
-//     [
-//    {
-//       "id": "3",
-//       "name": "Apple iPhone 12 Pro Max",
-//       "data": {
-//          "color": "Cloudy White",
-//          "capacity GB": 512
-//       }
-//    },
-//    {
-//       "id": "5",
-//       "name": "Samsung Galaxy Z Fold2",
-//       "data": {
-//          "price": 689.99,
-//          "color": "Brown"
-//       }
-//    },
-//    {
-//       "id": "10",
-//       "name": "Apple iPad Mini 5th Gen",
-//       "data": {
-//          "Capacity": "64 GB",
-//          "Screen size": 7.9
-//       }
-//    }
-//     ]
+    [
+   {
+      "id": "3",
+      "name": "Apple iPhone 12 Pro Max",
+      "data": {
+         "color": "Cloudy White",
+         "capacity GB": 512
+      }
+   },
+   {
+      "id": "5",
+      "name": "Samsung Galaxy Z Fold2",
+      "data": {
+         "price": 689.99,
+         "color": "Brown"
+      }
+   },
+   {
+      "id": "10",
+      "name": "Apple iPad Mini 5th Gen",
+      "data": {
+         "Capacity": "64 GB",
+         "Screen size": 7.9
+      }
+   }
+    ] */
 
     @JsonProperty("id")
-    public int id;
+    public String id;
 
     @JsonProperty("name")
     public String name;
@@ -54,6 +54,9 @@ public class ResponseObject {
     @JsonProperty("createdAt")
     public String createdAt;
 
+    @JsonProperty("updatedAt")
+    public String updatedAt;
+
     public static class DataItem{
         @JsonProperty("year")
         public int year;
@@ -62,7 +65,7 @@ public class ResponseObject {
         public int price;
 
         @JsonProperty("CPU model")
-        public String cPUModel;
+        public String cpuModel;
 
         @JsonProperty("Hard disk size")
         public String hardDiskSize;
