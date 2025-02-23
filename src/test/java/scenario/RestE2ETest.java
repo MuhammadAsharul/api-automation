@@ -82,7 +82,7 @@ public class RestE2ETest {
         System.out.println("response2" + response2.asPrettyString());
 
         //validation POJO
-
+/*  */
         //Update Product
         Response responseUpdate = given()
                             .log()
