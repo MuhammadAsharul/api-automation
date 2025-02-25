@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="8.102" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-24T01:43:28.072888400Z">
+<testcase classname="End to End simulation test" name="As a user i can add new data with some data - #1.1" time="4.673">
+<system-out><![CDATA[
+Given A list of products are available......................................passed
+When I add a new "addItem1" to etalase......................................passed
+Then The product is available...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End to End simulation test" name="As a user i can add new data with some data - #1.2" time="3.192">
+<system-out><![CDATA[
+Given A list of products are available......................................passed
+When I add a new "addItem2" to etalase......................................passed
+Then The product is available...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

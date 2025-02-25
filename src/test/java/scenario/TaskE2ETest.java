@@ -37,6 +37,7 @@ public class TaskE2ETest {
                             .when()
                                 .post("{path}");
         System.out.println("Response API" + response.asPrettyString());
+        
         JsonPath jsonPath = response.jsonPath();
         responseObject = jsonPath.getObject("", ResponseObject.class);
 
@@ -112,7 +113,7 @@ public class TaskE2ETest {
                             .delete("{path}/{idObject}");
         System.out.println("Response API" + responseDelete.asPrettyString());
 
-        
+
         // Verify updated product
         Response response4 = given()
                             .log()
@@ -124,6 +125,30 @@ public class TaskE2ETest {
         System.out.println("Response API" + response4.asPrettyString());
 
 
+        /* 
+         * Gherkin:
+         * 1. Feature
+         * - Given, Then, When, And, But (Step2)
+         * 
+         * 
+         * - Checkout Barang
+         * Given
+         * - User login to apps
+         * 
+         * When
+         * - User add product to cart
+         * - User checkout product
+         * 
+         * Then
+         * - Result/ expectation scenario
+         * - user successfully checkout product
+         * 
+         * And
+         * - Simplify prefix in steps
+         * 
+         * 2. Stepdefiniton
+         * 3. Runner
+         */
 
     }
 }
