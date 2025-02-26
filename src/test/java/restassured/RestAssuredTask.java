@@ -10,13 +10,13 @@ import org.json.JSONObject;
 public class RestAssuredTask {
     public static void main(String[] args) {
         // auth();
-        // getAllObjects();
+        getAllObjects2();
         // getListObjectById();
         // getObjectById();
         // createObject();
         // updateObject();
         // updatePartiallyObject();
-        deleteObject();
+        // deleteObject();
     }
     public static void getAllObjects(){
         // GET /objects
